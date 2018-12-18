@@ -1,0 +1,70 @@
+
+
+<h1>
+    Személyes adatok
+</h1>
+
+<p><?php echo $this->flashSession->output(); ?></p>
+
+<?php echo $this->tag->form("skills/add"); ?>
+
+
+
+<div class="form-group">
+    <label for="position">Pozíció</label>
+    <?php echo $form->render('position'); ?>
+</div>
+
+<div class="form-group">
+    <label for="name">Név</label>
+    <?php echo $form->render('name'); ?>
+</div>
+
+
+<div class="form-group">
+    <label for="date_of_birth">Születési dátum</label>
+    <?php echo $form->render('date_of_birth'); ?>
+</div>
+
+<div class="form-group">
+    <label for="mothers_name">Anyja neve</label>
+    <?php echo $form->render('mothers_name'); ?>
+</div>
+
+<div class="form-group">
+    <label for="email">Email</label>
+    <?php echo $form->render('email'); ?>
+
+
+</div>
+
+<div class="form-group">
+    <label for="phone_number">Telefonszám</label>
+    <?php echo $form->render('phone_number'); ?>
+</div>
+
+<div class="form-group">
+    <label for="zip_code">Irányítószám</label>
+    <?php echo $form->render('zip_code'); ?>
+</div>
+
+<div class="form-group">
+    <label for="city">Város</label>
+    <?php echo $form->render('city'); ?>
+</div>
+
+    <div class="form-group">
+        <label for="address">Utca és házszám</label>
+        <?php echo $form->render('address'); ?>
+    </div>
+
+    <div class="form-group">
+        <?php echo $form->render('submit'); ?>
+    </div>
+
+
+
+
+
+
+</form>

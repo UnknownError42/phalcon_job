@@ -1,0 +1,67 @@
+
+<h1>
+    Munkahelyek
+</h1>
+
+<p><?php echo $this->flashSession->output(); ?></p>
+
+<?php echo $this->tag->form("workplaces/add"); ?>
+
+
+    <div class="form-group">
+        <label for="company_name">Cég neve </label>
+        <?php echo $form->render('company_name'); ?>
+    </div>
+
+    <div class="form-group">
+        <label for="company_type">Cég típusa</label>
+        <?php echo $form->render('company_type'); ?>
+    </div>
+
+<div style="display: flex; justify-content: space-between">
+    <div class="form-group">
+        <label for="period_start">Időszak -tól</label>
+        <?php echo $form->render('period_start'); ?>
+    </div>
+
+    <div class="form-group">
+        <label for="period_end">Időszak -ig</label>
+        <?php echo $form->render('period_end'); ?>
+    </div>
+    </div>
+        <div class="form-group">
+        <label for="function">Tevékenység</label>
+        <?php echo $form->render('function'); ?>
+    </div>
+
+    <div class="form-group">
+        <?php echo $form->render('group1'); ?>
+    </div>
+    <div class="form-group">
+        <?php echo $form->render('group2'); ?>
+    </div>
+    <div class="form-group">
+        <?php echo $form->render('group3'); ?>
+    </div>
+    <div class="form-group">
+        <?php echo $form->render('group4'); ?>
+    </div>
+    
+
+    <div class="form-group">
+        <?php echo $form->render('submit'); ?>
+    </div>
+
+
+    </form>
+    
+  <?php echo $this->tag->form("workplaces/back"); ?>  
+    <div class="form-group">
+        <?php echo $form->render('back'); ?>
+    </div>
+
+
+
+ 
+
+</form>

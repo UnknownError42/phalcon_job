@@ -1,0 +1,10 @@
+      <?php  $this->session->set("user-name", "Omkar"); 
+      
+       
+        if ($this->session->has("user-name")) { 
+          
+         $name = $this->session->get("user-name"); 
+         echo($name); 
+        }
+        
+        ?>

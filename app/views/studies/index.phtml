@@ -1,0 +1,48 @@
+
+<h1>
+    Tanulmányok
+</h1>
+
+<p><?php echo $this->flashSession->output(); ?></p>
+
+<?php echo $this->tag->form("studies/add"); ?>
+
+
+<div class="form-group">
+    <label for="educational_institution">Oktatási intézmény </label>
+    <?php echo $form->render('educational_institution'); ?>
+</div>
+
+
+<div class="form-group">
+    <label for="year_of_completion">Befejezés éve</label>
+    <?php echo $form->render('year_of_completion'); ?>
+</div>
+
+Végzettség foka
+<div class="form-group">
+    <label for="radio1">Középiskola</label>
+    <?php echo $form->render('radio1', array("value" => "Középiskola")); ?>
+    <label for="radio2">Főiskola</label>
+    <?php echo $form->render('radio2', array("value" => "Főiskola")); ?>
+    <label for="radio3">Főiskola</label>
+    <?php echo $form->render('radio3', array("value" => "Egyetem")); ?>
+</div>
+
+
+
+<div class="form-group">
+    <label for="specialization_teaching_subjects">Szakirány, oktatott tárgyak</label>
+    <?php echo $form->render('specialization_teaching_subjects'); ?>
+</div>
+
+<div class="form-group">
+    <?php echo $form->render('submit'); ?>
+</div>
+</form>
+
+<?php echo $this->tag->form("studies/back"); ?>  
+<div class="form-group">
+    <?php echo $form->render('back'); ?>
+</div>
+</form>
